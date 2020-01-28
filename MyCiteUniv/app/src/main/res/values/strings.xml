@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">MyCiteUniv</string>
+    <string name="title_activity_autre_acitivity">Autre_acitivity</string>
+    <string name="textfield_label">Numero Chambre</string>
+    <string name="textfield_label1">Code Permanent</string>
+    <string name="textfield_label12">Nom</string>
+    <string name="textfield_label13">Filiere</string>
+    <string name="textfield_label14">Niveau</string>
+    <string name="textfield_label15">CNI</string>
+    <string name="textfield_label16">Tel</string>
+    <string name="reservation">Faire une reservation au pavillon A</string>
+</resources>
