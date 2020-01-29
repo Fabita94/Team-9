@@ -9,4 +9,6 @@
     <string name="textfield_label15">CNI</string>
     <string name="textfield_label16">Tel</string>
     <string name="reservation">Faire une reservation au pavillon A</string>
+    <string name="motPasse">Mot de Passe</string>
+    <string name="codePerm">Code Permanent</string>
 </resources>

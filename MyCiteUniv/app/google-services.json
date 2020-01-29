@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "977854493411",
+    "firebase_url": "https://citeunivbd.firebaseio.com",
+    "project_id": "citeunivbd",
+    "storage_bucket": "citeunivbd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:977854493411:android:acfc5ef74be4fa79be8bd6",
+        "android_client_info": {
+          "package_name": "com.bambey2019.myciteuniv"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "977854493411-s22f1gfcqvmuj5fpagn93ac49uvrbg8j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bambey2019.myciteuniv",
+            "certificate_hash": "0ddf47d5cbb46b61a42c5e508ca4f9d487df75fe"
+          }
+        },
+        {
+          "client_id": "977854493411-q33edcifel5fflnjd7l2vvgotlmd18bc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVAGPTV7fJAXgClRTSQ9Exvi9USPRrPAw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "977854493411-q33edcifel5fflnjd7l2vvgotlmd18bc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
