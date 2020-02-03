@@ -1,13 +1,13 @@
 package com.bambey2019.myciteuniv.Model;
 
 public class Users {
-    private String nom, codePerm, motPass, numCni, filiere, niveau, tel;
+    private String nom, codePerm, motPass, numCni, filiere, niveau, tel, numeroChamre;
 
     public Users(){
 
     }
 
-    public Users(String nom, String codePerm, String motPass, String numCni, String filiere, String niveau, String tel) {
+    public Users(String numeroChamre, String nom, String codePerm, String motPass, String numCni, String filiere, String niveau, String tel) {
         this.nom = nom;
         this.codePerm = codePerm;
         this.motPass = motPass;
@@ -15,6 +15,15 @@ public class Users {
         this.filiere = filiere;
         this.niveau = niveau;
         this.tel = tel;
+        this.numeroChamre = numeroChamre;
+    }
+
+    public String getNumeroChamre() {
+        return numeroChamre;
+    }
+
+    public void setNumeroChamre(String numeroChamre) {
+        this.numeroChamre = numeroChamre;
     }
 
     public String getNom() {

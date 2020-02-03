@@ -23,6 +23,16 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         Button btnReserv = (Button) findViewById(R.id.button);
+        Button btnContact = (Button) findViewById(R.id.button3);
+        btnContact.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                final Intent intentContact = new Intent(getApplicationContext(), ContactEchange.class);
+                startActivity(intentContact);
+                finish();
+
+            }
+        });
         btnReserv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
