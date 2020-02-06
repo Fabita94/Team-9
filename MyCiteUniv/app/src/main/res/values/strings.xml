@@ -11,4 +11,6 @@
     <string name="reservation">Faire une reservation au pavillon A</string>
     <string name="motPasse">Mot de Passe</string>
     <string name="codePerm">Code Permanent</string>
+    <string name="orangeMoney">Envoyer le paiement sur ce numero: 772040788</string>
+    <string name="cash">Passer au 1A si vous etes au campus 1 ou au 30D si vous etes au Campus 2</string>
 </resources>
