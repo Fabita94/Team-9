@@ -87,6 +87,34 @@ public class MainActivity extends AppCompatActivity {
                         }
                     }
                 }
+
+                else if(dataSnapshot.child("Codifies").child(codePerm).exists()){
+                    Users usersData = dataSnapshot.child("Codifies").child(codePerm).getValue(Users.class);
+
+                    if(usersData.getCodePerm().equals(codePerm)){
+                        if (usersData.getMotPass().equals(motPass)){
+                            Toast.makeText(MainActivity.this, "Connexion reussi ", Toast.LENGTH_SHORT).show();
+                            loanding.dismiss();
+
+                            final Intent intentCodifies = new Intent(MainActivity.this, LoginActivity.class);
+                            startActivity(intentCodifies);
+                        }
+                    }
+                }
+                else if(dataSnapshot.child("Responsable").child(codePerm).exists()){
+                    Users usersData = dataSnapshot.child("Responsable").child(codePerm).getValue(Users.class);
+
+                    if(usersData.getCodePerm().equals(codePerm)){
+                        if (usersData.getMotPass().equals(motPass)){
+                            Toast.makeText(MainActivity.this, "Connexion reussi: bienvenu cher responsable ", Toast.LENGTH_SHORT).show();
+                            loanding.dismiss();
+
+                            final Intent intentRespons = new Intent(MainActivity.this, InterfaceRespons.class);
+                            startActivity(intentRespons);
+                        }
+                    }
+                }
+
                 else{
                     Toast.makeText(MainActivity.this,"un compte avec ce " + codePerm + "n'existe pas " , Toast.LENGTH_SHORT).show();
                     loanding.dismiss();

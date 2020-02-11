@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
@@ -17,7 +18,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class AutreActivity extends AppCompatActivity {
-    ListView listeview;
+    ListView listView;
 
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
@@ -38,19 +39,23 @@ public class AutreActivity extends AppCompatActivity {
                 finish();
             }
         });
-        listeview= (ListView) findViewById(R.id.liste);
-        ArrayList  <String> arrayList= new ArrayList<>();
-        arrayList.add("Chambre 1");
-        arrayList.add("Chambre 2");
-        arrayList.add("Chambre 3");
-        arrayList.add("Chambre 4");
-        arrayList.add("Chambre 5");
-        arrayList.add("Chambre 16");
-        arrayList.add("Chambre 17");
-        arrayList.add("Chambre 18");
+        listView = (ListView) findViewById(R.id.listView);
 
-        ArrayAdapter arrayAdapter= new ArrayAdapter(this,android.R.layout.simple_list_item_1,arrayList);
-        listeview.setAdapter(arrayAdapter);
+        ArrayAdapter<String> mAdapter = new ArrayAdapter<String>(AutreActivity.this,
+                android.R.layout.simple_list_item_1, getResources().getStringArray(R.array.chambres));
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener(){
+            @Override
+
+            public void onItemClick(AdapterView<?> adapterView, View view , int i, long l){
+
+                Intent intent = new Intent(AutreActivity.this, ChambreActivity.class);
+                intent.putExtra("NumChambre", listView.getItemAtPosition(i).toString());
+                startActivity(intent);
+
+            }
+        });
+        listView.setAdapter(mAdapter);
 
     }
 }

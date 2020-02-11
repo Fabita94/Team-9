@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".PaimentActivity"></activity>
+        <activity android:name=".ChambreActivity"></activity>
+        <activity android:name=".InterfaceRespons" />
+        <activity android:name=".ResponsActivity" />
+        <activity android:name=".PublierReservation" />
+        <activity android:name=".PaimentActivity" />
         <activity android:name=".ContactEchange" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".FormulaireActivity" />

@@ -13,4 +13,19 @@
     <string name="codePerm">Code Permanent</string>
     <string name="orangeMoney">Envoyer le paiement sur ce numero: 772040788</string>
     <string name="cash">Passer au 1A si vous etes au campus 1 ou au 30D si vous etes au Campus 2</string>
+    <string name="item_default_num">Numero Reservation</string>
+    <string name="switch_text">valider</string>
+
+    <string-array name="chambres">
+        <item>chambre1</item>
+        <item>chambre2</item>
+        <item>chambre3</item>
+        <item>chambre4</item>
+    </string-array>
+
+    <string-array name="reservation">
+        <item>reservation 1</item>
+        <item>reservation 2</item>
+        <item>reservation 3</item>
+    </string-array>
 </resources>
