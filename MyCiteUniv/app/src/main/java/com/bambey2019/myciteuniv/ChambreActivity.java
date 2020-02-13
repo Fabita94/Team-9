@@ -42,6 +42,7 @@ public class ChambreActivity  extends AppCompatActivity{
     private TextView mAuthorView;
     private TextView mTitleView;
     private TextView mBodyView;
+    private TextView telView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,6 +61,7 @@ public class ChambreActivity  extends AppCompatActivity{
         mAuthorView = findViewById(R.id.postAuthor);
         mTitleView = findViewById(R.id.postTitle);
         mBodyView = findViewById(R.id.postBody);
+        telView = findViewById(R.id.telInfos);
 
 
     }
@@ -76,9 +78,10 @@ public class ChambreActivity  extends AppCompatActivity{
                 // Get Post object and use the values to update the UI
                 Users post = dataSnapshot.getValue(Users.class);
                 // [START_EXCLUDE]
-                mAuthorView.setText(post.getNom());
-                mTitleView.setText(post.getFiliere());
+                mAuthorView.setText(post.getFiliere());
+                mTitleView.setText(post.getNom());
                 mBodyView.setText(post.getNiveau());
+                telView.setText(post.getTel());
                 // [END_EXCLUDE]
             }
 

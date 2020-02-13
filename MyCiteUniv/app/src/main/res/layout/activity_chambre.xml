@@ -8,13 +8,16 @@
     tools:context=".PublierReservation"
     >
     <TextView
-        android:id="@+id/postAuthor"
-        style="@style/Base.TextAppearance.AppCompat.Small"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:gravity="center_vertical"
-        tools:text="someauthor@email.com" />
+    android:id="@+id/titre"
+    style="@style/TextAppearance.AppCompat.Medium"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="@color/design_default_color_primary"
+    android:layout_gravity="center"
+    android:ellipsize="end"
+    android:maxLines="1"
+    android:textStyle="bold"
+    tools:text="Infos sur l'Ocuppant" />
 
     <TextView
         android:id="@+id/postTitle"
@@ -25,12 +28,23 @@
         android:maxLines="1"
         android:textStyle="bold"
         tools:text="My First Post" />
-
+    <TextView
+        android:id="@+id/postAuthor"
+        style="@style/Base.TextAppearance.AppCompat.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="someauthor@email.com" />
     <TextView
         android:id="@+id/postBody"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         tools:text="Moi" />
+    <TextView
+        android:id="@+id/telInfos"
+        style="@style/Base.TextAppearance.AppCompat.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="someauthor@email.com" />
 
 </LinearLayout>

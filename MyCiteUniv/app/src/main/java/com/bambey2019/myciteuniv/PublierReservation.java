@@ -42,8 +42,14 @@ public class PublierReservation extends AppCompatActivity{
         private TextView mAuthorView;
         private TextView mTitleView;
         private TextView mBodyView;
+        private TextView carteEtu;
+        private TextView numChambre;
+        private TextView telEtu;
+        private TextView identiteEtu;
 
-        @Override
+
+
+    @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_publier_reservation);
@@ -60,7 +66,10 @@ public class PublierReservation extends AppCompatActivity{
             mAuthorView = findViewById(R.id.postAuthor);
             mTitleView = findViewById(R.id.postTitle);
             mBodyView = findViewById(R.id.postBody);
-
+            carteEtu = findViewById(R.id.carteEtu);
+            numChambre = findViewById(R.id.numeroChamb);
+            telEtu = findViewById(R.id.teletu);
+            identiteEtu = findViewById(R.id.identite);
 
         }
 
@@ -76,9 +85,13 @@ public class PublierReservation extends AppCompatActivity{
                     // Get Post object and use the values to update the UI
                     Users post = dataSnapshot.getValue(Users.class);
                     // [START_EXCLUDE]
-                    mAuthorView.setText(post.getNom());
-                    mTitleView.setText(post.getFiliere());
+                    mAuthorView.setText(post.getFiliere());
+                    mTitleView.setText(post.getNom());
                     mBodyView.setText(post.getNiveau());
+                    carteEtu.setText(post.getCodePerm());
+                    numChambre.setText(post.getNumeroChamre());
+                    telEtu.setText(post.getTel());
+                    identiteEtu.setText(post.getNumCni());
                     // [END_EXCLUDE]
                 }
 

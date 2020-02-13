@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
@@ -8,14 +9,14 @@
     tools:context=".PublierReservation"
     >
     <TextView
-        android:id="@+id/postAuthor"
+        android:id="@+id/texte"
         style="@style/Base.TextAppearance.AppCompat.Small"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:gravity="center_vertical"
-        tools:text="someauthor@email.com" />
-
+        android:layout_gravity="center"
+        android:text="Information sur L'etudiant"
+        android:textColor="@color/design_default_color_primary"
+        android:textSize="20sp"/>
     <TextView
         android:id="@+id/postTitle"
         style="@style/TextAppearance.AppCompat.Medium"
@@ -25,6 +26,24 @@
         android:maxLines="1"
         android:textStyle="bold"
         tools:text="My First Post" />
+    <TextView
+        android:id="@+id/carteEtu"
+        style="@style/Base.TextAppearance.AppCompat.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="someauthor@email.com" />
+    <TextView
+        android:id="@+id/postAuthor"
+        style="@style/Base.TextAppearance.AppCompat.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="someauthor@email.com" />
+    <TextView
+        android:id="@+id/identite"
+        style="@style/Base.TextAppearance.AppCompat.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="someauthor@email.com" />
 
     <TextView
         android:id="@+id/postBody"
@@ -32,11 +51,24 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         tools:text="Moi" />
+    <TextView
+        android:id="@+id/numeroChamb"
+        style="@style/Base.TextAppearance.AppCompat.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="someauthor@email.com" />
+    <TextView
+        android:id="@+id/teletu"
+        style="@style/Base.TextAppearance.AppCompat.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="someauthor@email.com" />
+
     <com.google.android.material.switchmaterial.SwitchMaterial
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        app:useMaterialThemeColors="false"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="wrap_content"
+        app:useMaterialThemeColors="false"
+        android:text="Valider la réservation"
+        android:background="@color/design_default_color_primary"/>
 
 </LinearLayout>

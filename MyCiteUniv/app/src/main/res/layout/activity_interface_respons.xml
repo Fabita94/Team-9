@@ -11,14 +11,13 @@
         style="@style/Widget.MaterialComponents.Button.Icon"
         android:layout_width="200dp"
         android:layout_height="100dp"
-        android:layout_marginTop="144dp"
+        android:layout_marginTop="392dp"
         android:text="RESERVATION"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         app:icon="@drawable/outline_house_black_24"
-        />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.388"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnContact"
@@ -26,13 +25,27 @@
         android:layout_width="200dp"
         android:layout_height="100dp"
         android:layout_marginTop="220dp"
+        android:layout_marginBottom="424dp"
         android:text="CONTACTER"
+        app:icon="@drawable/baseline_contact_mail_black_24"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.53"
+        app:layout_constraintHorizontal_bias="0.355"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button"
-        app:layout_constraintVertical_bias="0.0"
-        app:icon="@drawable/baseline_contact_mail_black_24"/>
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="104dp"
+        android:text="Vous pouvez Valider une réservation ou contacter un étudiant"
+        android:textColor="@color/design_default_color_primary"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
